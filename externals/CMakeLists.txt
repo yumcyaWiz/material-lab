@@ -22,3 +22,7 @@ target_link_libraries(imgui_glfw_opengl3 imgui)
 target_link_libraries(imgui_glfw_opengl3 glad)
 target_link_libraries(imgui_glfw_opengl3 glfw)
 target_include_directories(imgui_glfw_opengl3 SYSTEM PUBLIC imgui/backends)
+
+# spdlog
+SET(SPDLOG_MASTER_PROJECT ON CACHE BOOL "" FORCE)
+add_subdirectory(spdlog)
